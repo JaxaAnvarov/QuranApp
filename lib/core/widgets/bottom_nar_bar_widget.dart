@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quran_app/cubit/home_cubit/bottom_nav_bar_cubit.dart';
+import 'package:quran_app/cubit/bottom_nav_bar_cubit/bottom_nav_bar_cubit.dart';
 
 class MyBottomNavBarWidget extends StatelessWidget {
   const MyBottomNavBarWidget({Key? key}) : super(key: key);
