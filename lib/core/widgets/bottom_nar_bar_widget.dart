@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quran_app/cubit/bottom_nav_bar_cubit/bottom_nav_bar_cubit.dart';
+import 'package:quran_app/core/constants/exports.dart';
 
 class MyBottomNavBarWidget extends StatelessWidget {
   const MyBottomNavBarWidget({Key? key}) : super(key: key);
@@ -21,23 +20,17 @@ class MyBottomNavBarWidget extends StatelessWidget {
                     .read<BottomNavigationBarCubit>()
                     .changePages(indexOfBottomNavigationBar);
               },
-              items: const [
+              items: [
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home,
-                  ),
+                  icon: SvgPicture.asset(AppIcons.home),
                   label: 'Home',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.timer,
-                  ),
+                  icon: SvgPicture.asset(AppIcons.share),
                   label: 'Timer',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.bookmark,
-                  ),
+                  icon: SvgPicture.asset(AppIcons.bookmark),
                   label: 'Boookmark',
                 )
               ],
